@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RionRen</title>
+    <link rel="stylesheet" href="stylewebrental.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+        <a href="https://id.pinterest.com/pin/589690144989534405/" class="logo">⚙</a>
+        <ul class="menu">
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#about"><b>About</b></a></li>
+            <li><a href="page/loginakun.html"><b>Login</b></a></li>
+            <li><a href="page/daftarmobil.html"><b>Car List</b></a></li>
+            <li><a href="page/kritiksaran.html"><b>Contac Us</b></a></li>
+        </ul>
+        <div class="tombol">&#9776;</div>
+        </div>
+    </nav>
+    <section class="welcome-section" id="welcome"> <hr>
+        <div class="welcome-text">
+            <h1>Welcome to RionRen</h1> <hr>
+            <p style="margin-bottom: 50px;">
+                Providing various types of cars for your needs at affordable prices.
+            </p>
+            <a href="#about" class="btn-primary">About RionRen</a>
+        </div>
+    </section> <hr>
+    <section class="about-section" id="about">
+        <div class="image-container">
+            <img src="assets/ft tentang.jpg" alt="garage">
+        </div>
+        <div class="text-container">
+            <h2>RionRen</h2>
+            <p>
+                We provide cars that have passed the service and are clean. 
+                Every order you always check and service the car until it is safe and comfortable to use. 
+                Every return of the car will always be cleaned overall.
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section class="produk-section" id="produk">
+        <h2>Best Borrow</h2>
+        <div class="produk-container">
+            <div class="produk-card">
+                <img src="assets/2 bangku.jpg" alt="Produk 1">
+                <h3>Toyota 86</h3>
+                <p>The Toyota 86 is a bestseller, with two seats you can drive more privately.</p>
+            </div>
+            <div class="produk-card">
+                <img src="assets/4 bangku.jpg" alt="Produk 2">
+                <h3>Toyota Avanza</h3>
+                <p>Toyota Avanza is the best-selling car for family vacations with four seats.</p>
+            </div>
+                <div class="produk-card">
+                <img src="assets/6 bangku.jpg" alt="Produk 3">
+                <h3>Toyota Innova</h3>
+                <p>Toyota Innova is a best seller because its large 6 seat capacity the whole family can be happier with space and comfort.</p>
+            </div>
+        </div>
+        <a href="page/formulir.html" class="btn-formulir">Form Rental</a>
+    </section>
+    <script type="text/javascript">
+        //deklarasi tombol menu
+        const tombol = document.querySelector(".tombol");
+        const menu = document.querySelector(".menu");
+
+        //buat event click
+        //pas di click, tambahkan class aktif pda class menu
+        //pas diclick lgi, class aktif hilang dr class menu (toggle)
+        tombol.addEventListener("click", () => {
+            menu.classList.toggle("aktif");
+        })
+    </script>
+</body>
+</html>
